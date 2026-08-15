@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Shows the Spotify track you are currently playing, with album art, in the corner of the screen.",
+  "authors": [
+    "Kartonek"
+  ],
+  "license": "MIT",
+  "icon": "assets/spotifywidget/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.karton.spotifywidget.SpotifyWidgetClient"
+    ],
+    "modmenu": [
+      "dev.karton.spotifywidget.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "spotifywidget.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17",
+    "fabric-api": "*",
+    "minecraft": "${minecraft}"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

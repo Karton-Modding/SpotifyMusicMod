@@ -1,0 +1,9 @@
+{
+  "key.categories.spotifywidget": "Spotify Widget",
+  "key.category.spotifywidget.controls": "Spotify Widget",
+  "key.spotifywidget.next": "Next track",
+  "key.spotifywidget.previous": "Previous track",
+  "key.spotifywidget.volume_up": "Volume up",
+  "key.spotifywidget.volume_down": "Volume down",
+  "key.spotifywidget.play_pause": "Play / pause"
+}

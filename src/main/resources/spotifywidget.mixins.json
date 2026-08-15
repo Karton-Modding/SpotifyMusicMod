@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.karton.spotifywidget.mixin",
+  "compatibilityLevel": "${java}",
+  "client": [
+    "HudTextMixin",
+    "LevelEventMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
