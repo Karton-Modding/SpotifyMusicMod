@@ -1,10 +1,12 @@
-# Spoty Widget
+# Spotify Widget
+
+Also avalible on [curseforge](https://www.curseforge.com/minecraft/mc-mods/spoty-widget/preview)
 
 Shows the song you're playing - album art, title, artist, time, little equaliser - in the corner. No more alt tabbing to check the current song.
 
 **No Spotify account. No API key. No login.**
 
-![Widget Preview](https://cdn.modrinth.com/data/Fp1xKkvp/images/9ca1fb4edf3e1016a88978a6c6a90aaa5bfe432f.png)
+![Widget Preview](https://cdn.modrinth.com/data/pjhN6TWN/images/bffd731843d1b21b0347f1ebd6a5b42a2ffa25eb.png)
 
 ---
 
