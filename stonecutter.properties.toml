@@ -1,5 +1,5 @@
 mod.id = "spotifywidget"
-mod.name = "Spotify Widget"
+mod.name = "Spoty Widget"
 mod.group = "dev.karton"
 mod.version = "1.0.0"
 

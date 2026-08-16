@@ -1,4 +1,4 @@
-# Spotify Widget
+# Spoty Widget
 
 Client-side Fabric mod by **Kartonek** that shows the song you are currently playing — album art,
 title, artist, elapsed/total time and a small animated equaliser — in the corner of the screen
@@ -46,7 +46,7 @@ Spotify publishes the real cover URL through MPRIS, and that is used directly.
 
 ## Settings
 
-Mod Menu → Spotify Widget, or edit `config/spotifywidget.json`.
+Mod Menu → Spoty Widget, or edit `config/spotifywidget.json`.
 
 | Setting | Default | Notes |
 |---|---|---|
@@ -90,7 +90,7 @@ the two "show at" toggles.
 
 ## Playback controls
 
-Bound under **Options → Controls → Spotify Widget**, and they drive whatever the system media
+Bound under **Options → Controls → Spoty Widget**, and they drive whatever the system media
 session is playing - no account needed:
 
 | Action | Default key |
