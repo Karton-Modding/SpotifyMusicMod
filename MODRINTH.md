@@ -20,7 +20,7 @@ Shows the song you're playing - album art, title, artist, time, little equaliser
 
 **Requires:** Fabric Loader 0.17+, Fabric API. Mod Menu optional (settings UI). Windows/Linux only, client side only.
 
-`+1.21.1` `+1.21.3` `+1.21.4` `+1.21.5` `+1.21.8` `+1.21.10` `+1.21.11` `+26.1.2` `+26.2`
+`+1.21.1` `+1.21.3` `+1.21.4` `+1.21.5` `+1.21.8` `+1.21.10` `+1.21.11` `+26.1.2` `+26.2` `+26.3`
 
 ---
 

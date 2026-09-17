@@ -12,8 +12,9 @@ import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 /*import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;*/
 
 /**
- * Key mappings moved from a category string to a {@code KeyMapping.Category} in 1.21.9, and the
- * Fabric helper was renamed in 26.1. Both are handled here.
+ * Key mappings moved from a category string to a {@code KeyMapping.Category} in 1.21.9, the
+ * Fabric helper was renamed in 26.1, and 26.3 swapped GLFW keysyms for SDL scancodes
+ * ({@code Type.KEYSYM} became {@code Type.KEYBOARD}, swapped by Stonecutter). All handled here.
  */
 public final class Keys {
     //? if >=1.21.9 {
@@ -22,12 +23,15 @@ public final class Keys {
     //?} else
     /*private static final String CATEGORY = "key.categories.spotifywidget";*/
 
+    /** The "no key" code differs per version (-1 for GLFW keysyms, 0 for SDL scancodes). */
+    public static final int UNBOUND = InputConstants.UNKNOWN.getValue();
+
     private Keys() {
     }
 
-    /** Creates and registers a binding. Pass {@link InputConstants#UNKNOWN} style -1 for unbound. */
-    public static KeyMapping register(String translationKey, int glfwKey) {
-        KeyMapping mapping = new KeyMapping(translationKey, InputConstants.Type.KEYSYM, glfwKey, CATEGORY);
+    /** Creates and registers a binding. Pass {@link #UNBOUND} for no default key. */
+    public static KeyMapping register(String translationKey, int keyCode) {
+        KeyMapping mapping = new KeyMapping(translationKey, InputConstants.Type.KEYBOARD, keyCode, CATEGORY);
         //? if >=26.1 {
         return KeyMappingHelper.registerKeyMapping(mapping);
         //?} else

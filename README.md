@@ -14,7 +14,7 @@ system already has from the Spotify desktop app:
 
 macOS is not supported.
 
-Built for **Minecraft 1.21.1 through 26.2** from one codebase using
+Built for **Minecraft 1.21.1 through 26.3** from one codebase using
 [Stonecutter](https://stonecutter.kikugie.dev/).
 
 ## Supported versions
@@ -30,6 +30,7 @@ Built for **Minecraft 1.21.1 through 26.2** from one codebase using
 | `spotifywidget-1.0.0+1.21.11.jar` | 1.21.11 |
 | `spotifywidget-1.0.0+26.1.2.jar` | 26.1, 26.1.1, 26.1.2 |
 | `spotifywidget-1.0.0+26.2.jar` | 26.2 |
+| `spotifywidget-1.0.0+26.3.jar` | 26.3 |
 
 Requires Fabric API. Mod Menu is optional but is where the settings screen lives.
 
@@ -134,5 +135,5 @@ To work on the code in an IDE, pick the active version with the `stonecutter` Gr
   only refreshes the timeline every few seconds.
 - Album art is downloaded, scaled and corner-rounded off-thread; the texture upload happens on the
   client tick, never inside HUD rendering.
-- Everything that Mojang renamed between 1.21.1 and 26.2 lives in `compat/`.
+- Everything that Mojang renamed between 1.21.1 and 26.3 lives in `compat/`.
 - The mod is client only and never talks to the server you are playing on.

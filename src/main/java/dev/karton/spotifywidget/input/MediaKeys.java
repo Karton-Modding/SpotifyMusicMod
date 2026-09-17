@@ -2,8 +2,8 @@ package dev.karton.spotifywidget.input;
 
 import dev.karton.spotifywidget.compat.Keys;
 import dev.karton.spotifywidget.media.MediaControl;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
-import org.lwjgl.glfw.GLFW;
 
 /**
  * Playback controls, listed under "Spotify Widget" in the vanilla Controls screen.
@@ -25,11 +25,11 @@ public final class MediaKeys {
     }
 
     public static void register() {
-        next = Keys.register("key.spotifywidget.next", GLFW.GLFW_KEY_RIGHT);
-        previous = Keys.register("key.spotifywidget.previous", GLFW.GLFW_KEY_LEFT);
-        volumeUp = Keys.register("key.spotifywidget.volume_up", GLFW.GLFW_KEY_UP);
-        volumeDown = Keys.register("key.spotifywidget.volume_down", GLFW.GLFW_KEY_DOWN);
-        playPause = Keys.register("key.spotifywidget.play_pause", GLFW.GLFW_KEY_UNKNOWN);
+        next = Keys.register("key.spotifywidget.next", InputConstants.KEY_RIGHT);
+        previous = Keys.register("key.spotifywidget.previous", InputConstants.KEY_LEFT);
+        volumeUp = Keys.register("key.spotifywidget.volume_up", InputConstants.KEY_UP);
+        volumeDown = Keys.register("key.spotifywidget.volume_down", InputConstants.KEY_DOWN);
+        playPause = Keys.register("key.spotifywidget.play_pause", Keys.UNBOUND);
     }
 
     public static void tick() {
